@@ -1,0 +1,95 @@
+body {
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-align: center;
+    line-height: 1.8;
+    padding: 20px;
+    overflow: hidden;
+    animation: bgAnimation 10s infinite alternate;
+}
+
+@keyframes bgAnimation {
+    0% {
+        background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    }
+    50% {
+        background: linear-gradient(to bottom, #16222a, #3a6073, #2c5364);
+    }
+    100% {
+        background: linear-gradient(to bottom, #2b5876, #4e4376);
+    }
+}
+
+.shira {
+    margin-bottom: 20px;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.shira.rotate {
+    font-size: 34px;
+    animation: rotateIn 2s ease-out forwards;
+}
+
+.shira.bounce {
+    font-size: 30px;
+    animation: bounceIn 2s ease-out forwards;
+}
+
+.shira.fade {
+    font-size: 26px;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.shira.scale {
+    font-size: 36px;
+    animation: scaleUp 2s ease-out forwards;
+}
+
+.sprite {
+    margin-top: 50px;
+}
+
+@keyframes rotateIn {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
